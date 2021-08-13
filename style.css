@@ -1,0 +1,206 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+  	font-family: "Lucida Grande";
+	text-align: center;
+	background-color: #e58f15;
+}
+.clear{
+	clear: left;
+}
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+.container {
+  	max-width: 1170px;
+  	width: 100%;
+  	padding: 0 15px;
+  	margin: 0 auto;
+}
+
+
+header{
+	height: 65px;
+	width: 100%;
+  	background-color: rgba(255, 255, 255, 0.95);
+	position :fixed;
+	top: 0;
+	z-index: 10;
+}
+.logo {
+  	width: 64px;
+  	margin-top: 15px;
+}
+.header-left {
+  	float: left;
+}
+.header-right {
+  	float: right;
+  	margin-right: -25px;
+}
+.header-right a {
+  	line-height: 65px;
+  	padding: 0 25px;
+  	color: black;
+  	display: block;
+  	float: left;
+  	transition: all 0.5s;
+}
+.header-right a:hover {
+  	background-color: rgba(34, 49, 52, 0.3);
+}
+.menu-icon{
+	display: block;
+  	color: black;
+  	float: right;
+	visibility: hidden;
+	margin: 26px 0;
+}
+
+.kategori{
+	background-color: #124c6b;
+	padding-top: 50px;
+}
+.kategori-card{
+	display: inline-block;
+	width: 35%;
+	padding: 35px;
+	color: #f4eb90;
+	opacity: 0.95;
+}
+.kategori-card img{
+	width: 100%;
+}
+.kategori-card h2{
+	padding: 7px 0;
+}
+.kategori-link:hover{
+	opacity: 0.93;
+}
+.wrap-kategori{
+	position: relative;
+}
+.batas{
+	display: inline-block;
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+  	color: #f4eb90;
+  	font-size: 20PX;
+}
+.batas hr{
+	text-align: center;
+	margin: 9px auto;
+	height: 200px;
+	width: 1px;
+}
+
+.pria{
+	position: relative;
+	animation-name: kiri;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+}
+@keyframes kiri{
+	from{left: -250px;}
+  	to{left: 0px;}
+}
+.wanita{
+	position: relative;
+	animation-name: kanan;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+}
+@keyframes kanan{
+	from{right: -250px;}
+  	to{right: 0px;}
+}
+
+
+.products{
+	background-color: #e58f15;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+.products h3{
+	padding-top: 20px;
+	margin-bottom: 30px;
+	font-size: 25px;
+	color: white;  
+	opacity: 0.8;
+}
+.product{
+	position: relative;
+	animation-name: up;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+    display: inline-block;
+    max-width: 200px;
+	width: 100%;
+	margin: 0 5px 20px;
+	background-color: #fff;
+	padding: 10px;
+	opacity: 0.95;
+	border-radius: 5px;	
+	box-shadow: 5px 5px rgba(18, 30, 15, 0.85);
+}
+@keyframes up{
+	from{top:75px;}
+  	to{top:0px;}
+}
+.fa-star{
+	color: gold;
+	font-size: 12px;
+}
+.product img{
+	width: 100%;
+	padding-bottom: 10px;
+}
+.product h4{
+	padding-bottom: 5px;
+}
+.product p{
+	text-align: left;
+	font-size: 12px;
+	padding-top: 4px;
+}
+.tag-top{
+	padding: 4px;
+	position: absolute;
+	display: inline-block;
+	background-color: #FFA07A;
+	opacity: 0.8;
+	color: white;
+	border-radius: 0 0 4px 0;
+}
+.product-link .product:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.product-link .product:active{
+	position: relative;
+	top: 5px;
+	left: 5px;
+	box-shadow: none;
+}
+
+
+footer img {
+  	width: 64px;
+}
+
+footer p {
+  	color: #121e0f;
+  	font-size: 14px;
+}
+
+footer {
+  	padding-top: 30px;
+  	padding-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+	text-align: left;
+}
