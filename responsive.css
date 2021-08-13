@@ -1,0 +1,28 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+	.batas hr{
+		height: 100px;
+	}
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+	.kategori-card{
+		width: 90%;
+	}
+	.batas hr{
+		display: inline-block;
+		margin: auto 4px 5px;
+		height: 1px;
+		width: 50px;
+	}
+	footer {
+    	text-align: center;
+  	}
+  	.header-right{
+		visibility: hidden;
+  	}
+    .menu-icon{
+    	visibility: visible;
+  	}
+}
